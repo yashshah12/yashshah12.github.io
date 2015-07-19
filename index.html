@@ -68,7 +68,9 @@
                 </div>
 
                 <div class="col-sm-6 col-md-6 col-lg-6" id="about-content">
-                    <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.</p>
+                    <p>Hi, my name is Yash Shah. I am a second year studying at the University of Waterloo for Honours Math Co-op. I love all stuff tech and that is my passion. I also have an underlying passion for finance and how money works. Hoepfully, I can combine both my passions and find a career that is a mix of both. </p>
+                    <br/>
+                    <!-- <p>In the summer, I worked for a startup called Chalk.com and it was an incredible experience. First of all, startups are so informal in nature where everyone is a peer and it is just a friendly environment. But at the same time, it is very fast paced, a person doesnt know if that startup is going to exist next year.</p> -->
                 </div>
 
             </div>
@@ -90,7 +92,7 @@
                     <div class="card transition">
                       <h2 class="transition">Android App</h2>
                       <p>I created this in summer. Description - Give a short description</p>
-                      <div class="cta-container transition"><a href="#" class="cta">View</a></div>
+                      <div class="cta-container transition"><a href="#portfolioModal1" data-toggle="modal" class="cta">View</a></div>
                       <div class="card_circle card1 transition"></div>
                     </div>
                 </div>
@@ -98,15 +100,15 @@
                     <div class="card transition">
                       <h2 class="transition">Android SideScroller Game</h2>
                       <p>A simple sidescroller android game. Description - Give a short description</p>
-                      <div class="cta-container transition"><a href="#" class="cta">View</a></div>
+                      <div class="cta-container transition"><a href="#portfolioModal2" data-toggle="modal" class="cta">View</a></div>
                       <div class="card_circle card2 transition"></div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="card transition">
-                      <h2 class="transition">flash car game</h2>
+                      <h2 class="transition">Car Chase</h2>
                       <p>A flash car game I created in grade 10. Description - Give a short description</p>
-                      <div class="cta-container transition"><a href="#" class="cta">View</a></div>
+                      <div class="cta-container transition"><a href="#portfolioModal3" data-toggle="modal" class="cta">View</a></div>
                       <div class="card_circle card3 transition"></div>
                     </div>
                 </div>
@@ -189,6 +191,103 @@
         </div>
     </section>
 
+    <!-- Projects Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Android App</h2>
+                            <hr class="star-primary">
+                            <img src="img/androidapp.png" class="img-responsive img-centered" alt="Android App">
+                            <p>This is where I will be describing my android app. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Space Run - Android SideScroller</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/androidapp.png" class="img-responsive img-centered" alt="Android App"> -->
+                            <img class = "spacerunimg" src="img/spacerun/GameScreen.jpg" alt="">
+                            <img class = "spacerunimg" src="img/spacerun/MainMenu.jpg" alt="">
+                            <img class = "spacerunimg" src="img/spacerun/PauseMenu.jpg" alt="">
+                            <img class = "spacerunimg" src="img/spacerun/ScoresScreen.jpg" alt="">
+                            <div class="body-text">
+                                <p> I created this as final project to grade 12 programming class. I used a library called LibGDX that does the heavy lifting such as creating vectors and such. This was all coded in Java. </p>
+                                <br>
+                                <p>This app is currently not on the playstore, however, you can download the apk from here and put it on your android phone if you wish.</p>
+                                <a href="Shesh_Yash-android.apk" >Download Android APK of the game here </a>
+                                <br>
+                                <br>
+                                <p> Steps to install APK to phone</p>
+                                <ul>
+                                    <li> 1. Copy the APK to your phone.</li>
+                                    <li> 2. If you don't have a FileManager, download one. I use Astro File Manager (its free)</li>
+                                    <li> 3. Go to Settings>Security and check the "Unknown Sources" box </li>
+                                    <li> 4. Locate the APK file and click on it to install it.</li>
+                                    <li> 5. Enjoy</li>
+                                </ul>
+                                
+                                <p>You can play the game on your desktop if you want. </p>
+                                <a href = "SpaceRun.jar">Download Executable Jar Here.</a>
+                                <br>
+                                <br>
+                                <h4><a href = "dist/index.html">Click here to play the game on browser</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Car Chase - An Flash Game</h2>
+                            <hr class="star-primary">
+                            <h2>A 2 player car racing game</h2>
+                            <img class = "carimg" src="img/cargame1.png" alt="">
+                            <img class = "carimg" src="img/cargame3.png" alt="">
+                            <img class = "carimg" src="img/cargame4.png" alt="">
+                            <img class = "carimg" src="img/cargame2.png" alt="">
+                            <p>I created this project in grade 10 computer class. This game was created using actionscript.</p>
+                            <h2><a href = "MainFile.swf" target="_blank">Play this game!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Javascript files-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
