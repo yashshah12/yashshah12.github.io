@@ -1,27 +1,6 @@
 (function ($) {
-    //Scrolling feature incase I want to add a navbar
-    // $('#home-image').click(function (event) {
-    //     event.preventDefault();
-    //     viewport.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function () {
-    //         viewport.stop();
-    //     });
-    //     viewport.animate({
-    //         scrollTop: $('#about').offset().top
-    //     }, 700);
-    // });
-
-    // $('#projects-link').click(function (event) {
-    //     event.preventDefault();
-    //     viewport.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function () {
-    //         viewport.stop();
-    //     });
-    //     viewport.animate({
-    //         scrollTop: $('#projects').offset().top
-    //     }, 700);
-    // });
-
-
     $(function () {
+        var viewport = $('html, body');
         $('#home').waypoint(function () {
             setTimeout(function () {
                 $('#home-header').addClass('animated bounceIn')
@@ -53,6 +32,25 @@
         });
         $(".close-modal").click(function() {
           $('#projects').show();
+        });
+
+        $('#game-link').click(function (event) {
+            event.preventDefault();
+            viewport.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function () {
+                viewport.stop();
+            });
+            viewport.animate({
+                scrollTop: $('#projects').offset().top
+            }, 700);
+        });
+        $('#work-link').click(function (event) {
+            event.preventDefault();
+            viewport.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function () {
+                viewport.stop();
+            });
+            viewport.animate({
+                scrollTop: $('#work').offset().top
+            }, 700);
         });
     });
 
