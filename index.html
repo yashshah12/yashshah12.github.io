@@ -18,10 +18,10 @@
 
     <div class="header">
         <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4 header-title">
+            <div class="col-xs-6 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 header-title">
                 <a href="https://yashshah12.github.io"><h1 class="name-title">Yash Shah</h1></a>
             </div>
-            <div class="col-sm-7  col-md-7 col-lg-7">
+            <div class="col-xs-6 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-4 col-lg-3 col-lg-offset-4">
                 <div id="social-icons">
                     <ul>
                         <li id="facebook-icon">
@@ -47,19 +47,19 @@
         </div>
     </div>
 
-    <div class="aboutme">
-        <div class="aboutpic"></div>
-        <div class="aboutinfo">
-            <h1>Hello. I'm Yash!</h1>
-            <br>
-            <span>Yash means <strong>victory or glory</strong>. I am a proud resident of Kitchener-Waterloo, and as all of you know, it is a beacon to entrepreneurs and startups. Having lived here for a few years, I've been exposed to the startup environment where I've got to learn a lot about the tech side of things but also the entrepreneurial side as well. You can read about my work experience at a startup<a href="http://mr.chalk.com/interning-at-chalk-com/"> here </a></span>
-            <br>
-            <br>
-            <span>I am currently enrolled in Honors Math 2A Coop at University of Waterloo</span>
+    <section class="home">
+      <div class="row intro">
+        <div class="small-centered medium-uncentered medium-6 large-7 columns">
+          <h1>Hello. I'm Yash! </h1>
+          <p>Aspiring Software Developer with a passion for programming, solving problems and a new found interest for UI/UX design. View my <a id="proj-link" href="#">projects</a></p>
         </div>
-    </div>
+        <div class="small-centered medium-uncentered medium-6 large-5 columns">
+          <div class="prof-img"></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="projects">
+    <section class="projects">
         <ul class="rig columns-3">
             <li class="startupfinder">
                 <a href="https://play.google.com/store/apps/details?id=yash.app.startupfinder" data-toggle="modal" class="proj">
@@ -100,9 +100,9 @@
                 <img src="img/aboutme.jpg" class="projimg" />
             </li> -->
         </ul>
-    </div>
+    </section>
 
-    <div class="work">
+    <section class="work">
         <div class="title col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
             <h1>Work Experience</h1>
         </div>
@@ -123,6 +123,8 @@
                         <div class="description">
                         Chalk.com is a edtech startup located in the heart of downtown Kitchener. Chalk.com creates education tools for teachers to help them make their lives easier. They create lesson planning tools, assessments tools, etc. My role in this startup was rewriting their Markboard feature from Backbone to React to optimize speed improvements as well as adding on new features. I created the front-end using HTML, React, SCSS and maintained the backend using Ruby...
                         <br>
+                        <br>
+                        Read about my experiences <a id="blog-link" href="http://mr.chalk.com/interning-at-chalk-com/" >here</a>
                         </div>
                         <div class="work-skills">
                             <div class="tag"><span class="skills-tag">HTML</span></div>
@@ -136,13 +138,13 @@
                 </ul>
 
             </div>
-    </div>
-    <div class="resume">
+    </section>
+    <section class="resume">
         <div class="title col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
             <h1>Resume</h1>
         </div>
-        <div class="resumelink"><a href="LatestResume2015.pdf">View Resume</a></div>
-    </div>
+        <div class="resumelink"><a href="Yash Shah Resume.pdf">View Resume</a></div>
+    </section>
 
     <!-- Projects Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
