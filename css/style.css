@@ -285,22 +285,26 @@ ul.rig.columns-4 li {
     font-weight: 600;
     padding-bottom: 25px;
 }
+/*
 .work-experience .date {
     position: absolute;
     right: 0;
     margin-right: 15px;
     font-size: 17px;
 }
+*/
 .work-experience .position {
     font-size: 14px;
     font-weight: 600;
 }
+/*
 .work-experience .location {
     position: absolute;
     right: 0;
     margin-right: 15px;
     font-size: 14px;
 }
+*/
 .work-experience .description {
     font-size: 17px;
     padding-top: 25px;
@@ -315,14 +319,14 @@ ul.rig.columns-4 li {
     }
     
     .work-experience .date {
-        margin-right: 40px;
+/*        margin-right: 40px;*/
         font-size: 20px;
     }
     .work-experience .position {
         font-size: 18px;
     }
     .work-experience .location {
-        margin-right: 40px;
+/*        margin-right: 40px;*/
         font-size: 18px;
     }
     .work-experience .description {
@@ -454,4 +458,108 @@ ul.rig.columns-4 li {
 }
 .body-text {
     text-align: left;
+}
+
+.projects {
+    background-color: #f7f7f7;
+}
+
+.projects .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+.projects .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+}
+.projects .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(12,125,229, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+.projects .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+.projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+.projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+.projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+.projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+.projects .portfolio-item .portfolio-caption {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+.projects .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+.projects .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+.projects * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  .projects .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+.img-responsive {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+
+.feedbot-images {
+    width: 100%;
+    background-size: cover;
+    height: auto;
+}
+
+.work-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .work-container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .work-container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .work-container {
+        width: 66.66666667%;
+    }
 }
