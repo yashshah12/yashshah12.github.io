@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                <a href="#slackTranslateModal" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <h3>A slack command to automate a task at my workplace</h3>
@@ -259,7 +259,7 @@
                 Chalk.com is a edtech startup located in the heart of downtown Kitchener. Chalk.com creates education tools for teachers to help them make their lives easier. They create lesson planning tools, assessments tools, etc. My role in this startup was rewriting their Markboard feature from Backbone to React to optimize speed improvements as well as adding on new features. I created the front-end using HTML, React, SCSS and maintained the backend using Ruby...
                 <br>
                 <br>
-                Read about my experiences <a id="blog-link" href="http://mr.chalk.com/interning-at-chalk-com/">here</a>
+                Read about my experiences <a id="blog-link" href="https://talk.chalk.com/my-time-interning-at-chalk-com-586fb7d80024#.mqkymwhpb">here</a>
                 </div>
                 <div class="work-skills">
                     <div class="tag"><span class="skills-tag">HTML</span></div>
@@ -418,6 +418,58 @@
                                 <h3>Tech and API's</h3>
                                 <p>NodeJS, FacebookAPI, GoogleTrendsAPI, AlchemyLanguageAPI, Firebase</p>
                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="slackTranslateModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>SlackTranslate - A Slack Command</h2>
+                            <hr class="star-primary">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 ">
+                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%201.jpg" class="feedbot-images img-centered" alt="">
+                                </div>
+                                 <div class="col-md-4 col-sm-6 ">
+                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%202.jpg" class="feedbot-images img-centered" alt="">
+                                </div>
+                                <div class="col-md-4 col-sm-6 ">
+                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%203.jpg" class="feedbot-images img-centered" alt="">
+                                </div>
+                                <div class="col-md-4 col-sm-6 ">
+                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%204.jpg" class="feedbot-images img-centered" alt="">
+                                </div>
+                                <div class="col-md-4 col-sm-6 ">
+                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%205.jpg" class="feedbot-images img-centered" alt="">
+                                </div>
+                            </div>
+                            <div class="body-text">
+                                <h3>Background</h3>
+                                <p>During my coop term at QuickTapSurvey, we support 4 languages; EN, ES, FR, PT. That means, we have to localize a word or phrase into four different languages. This means, going on GoogleTranslate and typing the word or pharse and selecting the languages you want to translate to 3 times. 
+                                </p>
+                                <p>I noticed this and I wondered if there was a way to make this process easier and much faster. Since we used Slack, I came up with the idea of using a Slack command to fetch the translations. SlackTranslate was born. </p>
+                                <p>SlackTranslate is a slack command which takes in a word or phrase and spits out the translations in French, Spanish and Portuguese. </p>
+                                <br/>
+                                <h3>Features:</h3>
+                                <p>- SlackTranslate first looks at our local db of localization and determines if the word the user is trying to translate is already in our db.</p>
+                                <p>- If there is no translation in our local db, I use an API to get the translations and send that back</p>
+                                <br/>
+                                <h3>Tech and API's</h3>
+                                <p>NodeJS, SlackAPI, MicrosoftTranslateAPI</p>
                             </div>
                         </div>
                     </div>
