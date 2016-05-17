@@ -101,6 +101,9 @@ a:hover {
     border-bottom: 2px solid #007bb6;;
     color:#007bb6;
 }
+#social-icons #googleplay-icon a:hover{
+    border-bottom: 2px solid black;
+}
 
 /* Home Picture*/
 #proj-link {
@@ -108,7 +111,8 @@ a:hover {
     border-bottom: 1px white solid;
 }
 #proj-link:hover {
-    font-size: 1.1rem;
+/*    font-size: 1.1rem;*/
+    border-bottom: 1px red solid;
 } 
 .home {
   background: url("../img/aboutme.jpg") no-repeat center center;
