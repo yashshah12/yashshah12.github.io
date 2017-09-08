@@ -322,7 +322,18 @@ body {
     padding-bottom: 16px;
     line-height: 150%;
 }
-
+.wave-title {
+    color: #02a6ac;
+    text-decoration: none;
+}
+.chalk-title {
+    color: #277afc;
+    text-decoration: none;
+}
+.qts-title {
+    color: #F0800E;
+    text-decoration: none;
+}
 /* Projects Section */
 .projects-section {
     clear: both;
