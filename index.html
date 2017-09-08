@@ -1,585 +1,239 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Yash Shah" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://yashshah12@github.io" />
+
+    <meta name="description" content="I am a computer science student at the university of Waterloo.">
+    <meta name="keyword" content="Yash, Shah, University, Waterloo, Computer, Science, website, Wave, QuickTapSurvey, Chalk.com, Developer, Software, 2018, intern">
+
     <title>Yash Shah</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-    <div class="header">
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 header-title">
-                <a href="https://yashshah12.github.io"><h1 class="name-title">Yash Shah</h1></a>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-4 col-lg-3 col-lg-offset-4">
-                <div id="social-icons">
-                    <ul>
-                        <li id="github-icon">
-                            <a href="https://www.github.com/yashshah12">
-                                <i class="fa fa fa-github fa-2x"></i>
-                            </a>
-                        </li>
-                        <li id="linkedin-icon">
-                            <a href="https://ca.linkedin.com/in/yashshah12">
-                                <i class="fa fa-linkedin fa-2x"></i>
-                            </a>
-                        </li>
-                        <li id="googleplay-icon">
-                            <a href="https://play.google.com/store/apps/developer?id=YashShah">
-                              <img src="img/playstoreicon.jpeg" style="
-                                height: 24px;
-                                width: 20.578px;
-                                margin-top: -10px;
-                                display: inline-block;">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-
+  </head>
+  <body>
+    <div class="container">
+      <div class="header center">
+        <div class="header-title">
+          <span class="header-title--span">Yash Shah</span>
         </div>
-    </div>
-
-    <section class="home">
-      <div class="row intro">
-        <div class="small-centered medium-uncentered medium-6 large-7 columns">
-          <h1>Hello. I'm Yash! </h1>
-          <p>Aspiring Software Developer with a passion for programming, solving problems and learning new technology. View my <a id="proj-link" href="#">projects</a></p>
+        <div class="header-subtitle">
+          <span class="header-subtitle--span">
+            Aspiring Software Developer
+          </span>
         </div>
-        <div class="small-centered medium-uncentered medium-6 large-5 columns">
-          <div class="prof-img"></div>
+        <div class="header-contact-links">
+          <a class="header-contact-links--icon" href="https://github.com/yashshah12">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+          <a class="header-contact-links--icon" href="https://ca.linkedin.com/in/yashshah12">
+            <i class="fa fa-linkedin fa-lg"></i>
+          </a>
+          <a class="header-contact-links--icon" href="https://play.google.com/store/apps/developer?id=YashShah">
+            <i class="fa fa-play fa-lg"></i>
+          </a>
+          <a class="header-contact-links--icon" href="mailto:ybshah12@gmail.com">
+            <i class="fa fa-paper-plane fa-lg"></i>
+          </a>
         </div>
       </div>
-    </section>
 
-    <section class="projects">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#roadRestrictionseModal" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h3>App that allows you to find all road blocks in Toronto and sends you notifications</h3>
-                        </div>
-                    </div>
-                    <img src="img/rrnotification.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Road Restrictions</h4>
-                    <p class="text-muted">Android App</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#slackTranslateModal" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h3>A slack command to automate a task at my workplace</h3>
-                        </div>
-                    </div>
-                    <img src="img/SlackTranslate/slackTranslate.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>SlackTranslate</h4>
-                    <p class="text-muted">Slack Command</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#feedBotModal" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h3>Share your opinion on current trends in your area with FeedBot</h3>
-                        </div>
-                    </div>
-                    <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%201.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>FeedBot</h4>
-                    <p class="text-muted">MessengerBot</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="https://play.google.com/store/apps/details?id=yash.app.startupfinder" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h3>An Android App that allows students to easily find startups in the KW region</h3>
-                        </div>
-                    </div>
-                    <img src="img/startupfinder.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>StartupFinder</h4>
-                    <p class="text-muted">Android App</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#spaceRunModal" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h3>Android SideScroller Game</h3>
-                        </div>
-                    </div>
-                    <img src="img/spacerun/GameScreen.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>SpaceRun</h4>
-                    <p class="text-muted">Android App - Game</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#carChaseModal" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h3>Two player car racing game</h3>
-                        </div>
-                    </div>
-                    <img src="img/cargame.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>The Chase</h4>
-                    <p class="text-muted">Flash- Car Racing Game</p>
-                </div>
-            </div>
+      <div class="about-me-section">
+        <span class="about-me-section--body">
+          Hi there, I'm Yash.
+          I am currently a third year Computer Science student at the University of Waterloo in Waterloo, Ontario. I am an aspiring software developer looking to work on interesting but impactful projects.
+          <br />
+          <br />
+          I have had a few work experiences under my belt and got the opportunity to work at some really nice and interesting companies such as Wave, QuickTapSurvey and Chalk.com.
+          <br />
+          <br />
+          View my 
+          <a class="resume-link" href="./static/Resume3BV2.pdf">resume</a>.
+        </span>
+      </div>
+
+      <div class="work-section">
+        <h2 class="work-section--header">
+          past work experience
+        </h2>
+        <div class="work-3A">
+          <div class="work-section--title">
+          Wave 
+          </div>
+          <div class="work-section--body">
+            Wave is a company focused on delivering innovative financial services and free software to small businesses around the world. It offers a variety of products from invoicing, payments, accounting, receipts, lending and payroll.
+            <br />
+            <br />
+          </div>
+
+          <div class="work-section--subheader">
+          2B Coop
+          </div>
+          <div class="work-section--body">
+            Talk About 2B coop here
+            <br />
+            <br />
+          </div>
+
+          <div class="work-section--subheader">
+          3A Coop 
+          </div>
+          <div class="work-section--body">
+            Talk About 3B coop her and why i came back
+            <br />
+            <br />
+          </div>
         </div>
-        
-<!--
-        <ul class="rig columns-3">
-            <li class="startupfinder">
-                <a href="https://play.google.com/store/apps/details?id=yash.app.startupfinder" data-toggle="modal" class="proj">
-                    <img src="img/startupfinder.jpg" class="projimg" />
-                    <div class="startupfindertitle">
-                        <h1><strong>Startup Finder</strong></h1>
-                        <br>
-                        <a href="https://play.google.com/store/apps/details?id=yash.app.startupfinder">
-                          <img class="playstore"alt="Android app on Google Play" 
-                               src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
-                        </a>
-                    </div>
-                </a>
-            </li>
-            <li class="spacerun">
-                <a href="#portfolioModal2" data-toggle="modal" class="proj">
-                    <img src="img/spacerun/GameScreen.jpg" class="projimg" />
-                    <div class="spaceruntitle">
-                        <h1><strong>Space Run</strong></h1>
-                    </div>
-                </a>
-            </li>
-            <li class="carchase">
-                <a href="#portfolioModal3" data-toggle="modal" class="proj">
-                    <img src="img/cargame.jpg" class="projimg" />
-                    <div class="carchasetitle">
-                        <h1><strong>Car Chase</strong></h1>
-                    </div>
-                </a>
-            </li>
-             <li>
-                <img src="img/aboutme.jpg" class="projimg" />
-            </li>
-            <li>
-                <img src="img/aboutme.jpg" class="projimg" />
-            </li>
-            <li>
-                <img src="img/aboutme.jpg" class="projimg" />
-            </li> 
-        </ul>
--->
-    </section>
-
-    <section class="work">
-        <div class="title col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                <h1>Work Experience</h1>
-            </div>
-        <div class="work-container">
-            <div class="row work-experience">
-
-                <div class="work-icon">
-                    <img src="img/qts.jpg" alt="chalk.com" style="width:60px;height:60px;">
-                </div>
-                <div style="
-    /* display: inline; */
-    ">
-                    <span class="name" style="
-    /* display: inline; */
-    ">QuickTapSurvey</span>
-                    <span class="date" style="
-    float: right;
-    ">January 2015 - April 2015</span>
-                </div>
-                <div>
-                    <span class="position" style="
-    ">Software Developer</span>
-                    <span class="location" style="
-    float: right;
-    ">Toronto, Ontario</span>   
-                </div>
-                <div class="description">
-               QuickTapSurvey is a survey creation platform heping make it easy to create surveys and collecting offline survey responses while out in the field on iOS and Android mobile apps.
-                    
-                I spent my first month helping the web team implement features for their major web 8.0 release. This allowed me to learn the Spring MVC framework and I used Java,  Javascript, HTML and CSS.
-                <h1></h1>
-                I spent rest of my time working on their Android app.
-                I really undestood how to create a scalable Android app that targets many Android versions and supports multiple screen sizes such as 620dp, 320dp, 720dp and then considering the orientation whether it is portrait or landscape.
-                <h1></h1>
-                While working on the Android platform, this is where I started to pay attention to the performance aspects of what I did. We have users running 5 year old devices that have less than 1gb ram so it is very crucial that you want to design your code to be able to run on slower devices and perform well.
-                <h1></h1>
-                Some of the things I worked on were:
-                    <li>
-                        <ol>Net Promoter Score (NPS) question type</ol>
-                    </li>
-                    <li>
-                        <ol>Sign-up validation</ol>
-                    </li>
-                    <li>
-                        <ol>Photo capture question; making bitmap improvements</ol>
-                    </li>
-                    <li>
-                        <ol>Redesigning list picker question and using Google's best practices to increase performance when having 500+ answers on slow devices</ol>
-                    </li>
-                    <li>
-                        <ol>Redesigning UI</ol>
-                    </li>
-                    <li>
-                        <ol>Bug fixes...</ol>
-                    </li>
-                </div>
-                <div class="work-skills">
-                    <div class="tag"><span class="skills-tag">Java</span></div>
-                    <div class="tag"><span class="skills-tag">HTML</span></div>
-                    <div class="tag"><span class="skills-tag">CSS</span></div>
-                    <div class="tag"><span class="skills-tag">Javascript</span></div>
-                    <div class="tag"><span class="skills-tag">Spring MVC</span></div>
-                    <div class="tag"><span class="skills-tag">Android</span></div>
-                    <div class="tag"><span class="skills-tag">GIT</span></div>
-                </div>
-
-            </div>
-            <div class="row work-experience">
-
-                <div class="work-icon">
-                    <img src="img/chalk.png" alt="chalk.com" style="width:60px;height:60px;">
-                </div>
-                <div style="
-    /* display: inline; */
-    ">
-                    <span class="name" style="
-    /* display: inline; */
-    ">Chalk.com</span>
-                    <span class="date" style="
-    float: right;
-    ">May 2014 - August 2014</span>
-                </div>
-                <div>
-                    <span class="position" style="
-    ">Software Developer</span>
-                    <span class="location" style="
-    float: right;
-    ">Kitchener, Ontario</span>   
-                </div>
-                <div class="description">
-                Chalk.com is a edtech startup located in the heart of downtown Kitchener. Chalk.com creates education tools for teachers to help them make their lives easier. They create lesson planning tools, assessments tools, etc. My role in this startup was rewriting their Markboard feature from Backbone to React to optimize speed improvements as well as adding on new features. I created the front-end using HTML, React, SCSS and maintained the backend using Ruby...
-                <br>
-                <br>
-                Read about my experiences <a id="blog-link" href="https://talk.chalk.com/my-time-interning-at-chalk-com-586fb7d80024#.mqkymwhpb">here</a>
-                </div>
-                <div class="work-skills">
-                    <div class="tag"><span class="skills-tag">React</span></div>
-                    <div class="tag"><span class="skills-tag">HTML</span></div>
-                    <div class="tag"><span class="skills-tag">CSS</span></div>
-                    <div class="tag"><span class="skills-tag">Javascript</span></div>
-                    <div class="tag"><span class="skills-tag">Ruby on Rails</span></div>
-                    <div class="tag"><span class="skills-tag">GIT</span></div>
-                </div>
-
-            </div>
+        <div class="work-2A">
+          <div class="work-section--title">
+          QuickTapSurvey 
+          </div>
+          <div class="work-section--body">
+            QTS
+            <br />
+            <br />
+          </div>
         </div>
-    </section>
-    
-    <section class="resume">
-        <div class="title col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-            <h1>Resume</h1>
+        <div class="work-1B">
+          <div class="work-section--title">
+          Chalk.com 
+          </div>
+          <div class="work-section--body">
+            Chalk.com
+            <br />
+            <br />
+          </div>
         </div>
-        <div class="resumelink"><a href="Yash_Resume_Spring2016.pdf">View Resume</a></div>
-    </section>
+      </div>
 
-    <!-- Projects Modals -->
-    <div class="portfolio-modal modal fade" id="roadRestrictionsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Android App</h2>
-                            <hr class="star-primary">
-                            <img src="img/androidapp.png" class="img-responsive img-centered" alt="Android App">
-                            <p>This is where I will be describing my android app. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="projects-section">
+        <h2 class="work-section--header">
+          projects
+        </h2>
+
+        <!-- Starup Finder -->
+        <div class="projects-item">
+          <div class="work-section--title">
+          Starup Finder
+          </div>
+        </div> 
+        <div class="work-section--body">
+          Startup Finder is an Android app created primarily for students like me who are looking for Co-op and want to find startups in the Kitchener-Waterloo Region that intrigue them.
+          <br />
+          <br />
+          Features: 
+          <br />
+          - View startups on a map to see where all the startups are located. 
+          <br />
+          - Search for a startup you know from a whole list of startups. 
+          <br />
+          - View a startup's profile where you get to see their information(name, email, website...), their products, their latest twitter posts, and you can add comments on the startup and read what other people think of it. 
+          <br />
+          - View all the latest job openings from startups.
+          <br />
+          <br />
+          <b>Tech Stack:</b> Android, Firebase, Google Location Services
+          <br />
+          <br />
+          View on 
+          <a class="resume-link" href="https://play.google.com/store/apps/details?id=yash.app.startupfinder">Play Store</a>
         </div>
+        <div class="projects-item-image-section"></div>
+
+        <!-- Slack Translate -->
+        <div class="projects-item">
+          <div class="work-section--title">
+          Slack Translate
+          </div>
+        </div>  
+        <div class="work-section--body">
+          Slack Translate is a Slack command which takes in a word or phrase and spits out the translations in French, Spanish and Portuguese. During my coop term at QuickTapSurvey, we supported 4 languages; EN, ES, FR, PT, thus localizing a word or phrase into four different languages. The current way this was done was going on GoogleTranslate and typing the word or pharse and selecting the languages you want to translate. This caught my attention as this was a very inefficient way and it slowed down development time. Since we used Slack as our primary communication, I decided to create a Slack command to make this task more efficient. 
+          <br />
+          <br />
+          Since we kept a collection of phrases we localized, this command first looks at our localization db and if the phrase is not found or a similar match is not found, it will use an online translation API. 
+
+          <br />
+          <br />
+          <b>Tech Stack:</b> NodeJS, SlackAPI, MicrosoftTranslateAPI
+        </div>
+
+        <div class="projects-item-image-section">
+          <img class="projects-item-image-section--image" src="./img/SlackTranslate/db.png">
+          <div class="projects-item-image-section--caption">Slack Command for Localizaing Phrases</div>
+        </div>
+        <!--  Road Restrictions -->
+        <div class="projects-item">
+          <div class="work-section--title">
+          Road Restrictions
+          </div>
+        </div>  
+        <div class="work-section--body">
+          An Android app that allows you to view road constructions in Toronto and get more information about it so you can plan your trip accordingly. Sends notifications once you are a near distance from a road block so you have time to make changes. Use the car mode when you are driving and get voice alerts of road restrictions so you can pay attention to the road but still get useful information
+          <br />
+          <br />
+          <b>Tech Stack:</b> Java, SQLite, Volley, Google Services
+        </div>
+
+        <div class="projects-item-image-section">
+          <img class="projects-item-image-section--image-3" src="./img/RoadRestrictions/rrhome.png">
+          <img class="projects-item-image-section--image-3" src="./img/RoadRestrictions/rr5km.png">
+          <img class="projects-item-image-section--image-3" src="./img/RoadRestrictions/rrnotification.png">
+        </div>
+        <div class="projects-item-image-section">
+          <img class="projects-item-image-section--image-3" src="./img/RoadRestrictions/rrsearch.png">
+          <img class="projects-item-image-section--image-3" src="./img/RoadRestrictions/rrmap.png">
+          <video class="projects-item-image-section--image-3" controls>
+            <source src="./img/RoadRestrictions/rrvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <div class="projects-item-image-section--caption">Screenshots of the app</div>
+        </div>
+
+        <!-- Space Run -->
+        <div class="projects-item">
+          <div class="work-section--title">
+          Space Run
+          </div>
+        </div> 
+        <div class="work-section--body">
+          Space Run is an Android 2D side scroller game. It has all the classics of a side scroller like, shoot, jump, dodge, and collect coins for powerups.
+          <br />
+          <br />
+          <b>Tech Stack:</b> Android, libGDX
+          <br />
+          <br />
+          View on 
+          <a class="resume-link" href="https://play.google.com/store/apps/details?id=com.shesh.game.android">Play Store</a>
+        </div>
+        <div class="projects-item-image-section"></div>
+      </div>
+
+      <!--  Footer Section -->
+      <div class="footer center">
+        <div class="header-subtitle">
+          <span class="header-subtitle--span">
+            You reached the end! Thanks for reading.
+          </span>
+        </div>
+      </div>
+
     </div>
-    <div class="portfolio-modal modal fade" id="spaceRunModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Space Run - Android SideScroller Game</h2>
-                            <hr class="star-primary">
-                            <!-- <img src="img/androidapp.png" class="img-responsive img-centered" alt="Android App"> -->
-                            <img class = "spacerunimg" src="img/spacerun/GameScreen.jpg" alt="">
-                            <img class = "spacerunimg" src="img/spacerun/MainMenu.jpg" alt="">
-                            <img class = "spacerunimg" src="img/spacerun/PauseMenu.jpg" alt="">
-                            <img class = "spacerunimg" src="img/spacerun/ScoresScreen.jpg" alt="">
-                            <div class="body-text">
-                                <p><strong>Description: </strong>Try to stay alive as long as possible from those ugly monsters. Be careful as they will try and shoot you. Dodge them by jumping on higher platforms. Use your space gun and collect coins to activate your power-ups. Best of Luck!</p>
-                                <p> I created this as final project to grade 12 programming class. I used a library called LibGDX that does the heavy lifting such as creating vectors and such. This was all coded in Java. </p>
-                                <br>
-                                <h2>Multiple Ways To Get The Game</h2>
-                                <h4><strong>1) Download the game from Playstore:</strong></h4>
-                                <a href='https://play.google.com/store/apps/details?id=com.shesh.game.android&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-                                
-                                <h4><strong>2) Download the .jar file and play it on computer <a href = "SpaceRun.jar">here.</a></strong> </h4>
-                                <h4><strong><a href = "dist/index.html">3) Click here to play the game on browser</a></strong></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="carChaseModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Car Chase - An Flash Game</h2>
-                            <hr class="star-primary">
-                            <h3>A 2 player car racing game</h3>
-                            <img class = "carimg" src="img/cargame1.png" alt="">
-                            <img class = "carimg" src="img/cargame3.png" alt="">
-                            <img class = "carimg" src="img/cargame4.png" alt="">
-                            <img class = "carimg" src="img/cargame2.png" alt="">
-                            <p><strong>Description: </strong>You two are the best racers in the world. Both you are talented drivers and you have beat the competition to get here. But, only one of you can be crowned title of "The World's Best Racer". Who will it be? Get started and find out.</p>
-                            <p>This was the first computer science class I took and for my final project, I created this 2 player car racing game. Aside from the visuals, I think this game turned out great. It was written in Action Script
-                            </p>
-                            <p><a href="http://2oi.sgrondin.ca/ss21/Driving.html">View this game on the course website</a></p>
-                            <h2><a href = "MainFile.swf" target="_blank">Play this game!</a></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="feedBotModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>FeedBot - A MessengerBot</h2>
-                            <hr class="star-primary">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%201.jpg" class="feedbot-images img-centered" alt="">
-                                </div>
-                                 <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%202.jpg" class="feedbot-images img-centered" alt="">
-                                </div>
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%203.jpg" class="feedbot-images img-centered" alt="">
-                                </div>
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%204.jpg" class="feedbot-images img-centered" alt="">
-                                </div>
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/FeedBotAndroidScreenShots/Nexus%206P%20-%20Screenshot%205.jpg" class="feedbot-images img-centered" alt="">
-                                </div>
-                            </div>
-                            <div class="body-text">
-                                <h3>Background</h3>
-                                <p>During Winter 2016, I worked at QuickTapSurvey and every 4 months, they host an inhouse hackathon for their employees to try and learn new tech and get a little break from the normal routine. 
-                                </p>
-                                <p>A few weeks prior to the hackathon, Facebook had their Developer Conference where the introduced Bots on their Messenger platform. I heard alot about these bots and even went to a tech meetup about Bots but I never messed around with one. </p>
-                                <p>So, I decided to create my own messenger bot within the timeframe(~9 hrs) and see what I can come up with.</p>
-                                <p>The idea to come up with this FeedBot was inspired from the fact that the company I was working for (QuickTapSurvey) provided a survey creation platform and so I wanted to use this MessengerBot to be able to collect information from the users as if I was taking a survey and then analyze it.  </p>
-                                <br/>
-                                <h3>What is FeedBot?</h3>
-                                <p>FeedBot is a MessengerBot that collects people's opinions on current trends occurring in their area and analyzes that information</p>
-                                <p>The strength of MessengerBot is that we can present the user with choices and users can click on a button and based on their choice, we can perform some action. This allowed me to present the user with a few trending topics in their location and allow them to click on the trend instead of typing it out. After I collected people's opinions on a trending topic, it was time to analyze it. With the help of IBM's AlchemyLanguageAPI, it analyzed my content to spit out an sentiment analysis of how people felt about a certain trend. Along with the sentiment analysis, I decided to use Google Charts to show the responses people had and used FacebookAPI to automatically post the graph to FeedBot's Facebook Page.</p>
-                                <br/>
-                                <h3>Tech and API's</h3>
-                                <p>NodeJS, FacebookAPI, GoogleTrendsAPI, AlchemyLanguageAPI, Firebase</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="portfolio-modal modal fade" id="slackTranslateModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>SlackTranslate - A Slack Command</h2>
-                            <hr class="star-primary">
-                            <div class="row">
-                                <div class="row">
-                                     <img src="img/SlackTranslate/translationFromAPI.png" class="feedbot-images img-centered" alt="">
-                                    <p>Using MicrosoftTranslate API</p>
-                                    <br/>
-                                </div>
-                                 <div class="row">
-                                     <img src="img/SlackTranslate/translationindb.png" class="feedbot-images img-centered" alt="">
-                                     <p>Fetching translation from our db</p>
-                                     <br/>
-                                </div>
-                            </div>
-                            <div class="body-text">
-                                <h3>Background</h3>
-                                <p>During my coop term at QuickTapSurvey, we support 4 languages; EN, ES, FR, PT. That means, we have to localize a word or phrase into four different languages. This means, going on GoogleTranslate and typing the word or pharse and selecting the languages you want to translate to 3 times. 
-                                </p>
-                                <p>I noticed this and I wondered if there was a way to make this process easier and much faster. Since we used Slack, I came up with the idea of using a Slack command to fetch the translations. That's how SlackTranslate was born. </p>
-                                <p>SlackTranslate is a slack command which takes in a word or phrase and spits out the translations in French, Spanish and Portuguese. </p>
-                                <br/>
-                                <h3>Features:</h3>
-                                <p>- SlackTranslate first looks at our local db of localization and determines if the word the user is trying to translate is already in our db.</p>
-                                <p>- If there is no translation in our local db, I use an API to get the translations and send that back</p>
-                                <br/>
-                                <h3>Tech and API's</h3>
-                                <p>NodeJS, SlackAPI, MicrosoftTranslateAPI</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="portfolio-modal modal fade" id="roadRestrictionseModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>RoadRestrictions - Android App</h2>
-                            <hr class="star-primary">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/rrhome.png" class="feedbot-images img-centered" alt="">
-                                </div>
-                                 <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/rr5km.png" class="feedbot-images img-centered" alt="">
-                                </div>
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/rrnotification.png" class="feedbot-images img-centered" alt="">
-                                </div>
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/rrsearch.png" class="feedbot-images img-centered" alt="">
-                                </div>
-                                <div class="col-md-4 col-sm-6 ">
-                                     <img src="img/rrmap.png" class="feedbot-images img-centered" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <video width="320" height="240" controls>
-                                  <source src="img/rrvideo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="body-text">
-                                <h3>Background</h3>
-                                <p>An Android app that allows you to view road constructions in Toronto and get more information about it so you can plan your trip accordingly. Sends notifications once you    are a near distance from a road block so you have time to make changes. Use the car mode when you are driving and get voice alerts of road restrictions so you can pay attention to the road but still get useful information</p>
-                                <br/>
-                                <h3>Features:</h3>
-                                <div>
-                                    <li> 
-                                        <ol><p>Push notifiction about a road block once you are close</p></ol>
-                                    </li>
-                                    <li>
-                                        <ol><p>Car Mode - Voice feedback about a road block when driving</p></ol>
-                                    </li>
-                                </div>
-                                <br/>
-                                <h3>Tech and API's</h3>
-                                 <div>
-                                    <li>
-                                        <ol><p>Java</p></ol>
-                                    </li>
-                                     <li>
-                                        <ol><p>SQLite</p></ol>
-                                    </li>
-                                     <li>
-                                        <ol><p>Volley</p></ol>
-                                    </li>
-                                     <li>
-                                        <ol><p>Google Play Services API</p></ol>
-                                    </li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </body>
 
-    <!--Javascript files-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
-    <script src="js/bootstrap.min.js "></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/main.js "></script>
-    <script src='js/typed.js'></script>
-</body>
+  <script src="https://use.fontawesome.com/efa545d8e7.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106145097-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </html>
