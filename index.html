@@ -31,19 +31,11 @@
         height: 100vh;
       }
 
-      .carousel-item:nth-child(n) {
-        /* background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); */
-        background-image: url('img/wedding.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-      }
-
-      .carousel-item:nth-child(2) {
-        background: #212121;
-        display: flex;
-        justify-content: center;
+      @media only screen and (max-width: 600px)  {
+        .carousel-item:nth-child(n) {
+          background: url("img/top.png") center top -10% / 100% auto no-repeat, url("img/bottom3.png") center bottom -10% / 100% auto no-repeat;
+          box-sizing: border-box;
+        }
       }
 
       .carousel-item-text:nth-child(n) {
@@ -52,11 +44,8 @@
       }
 
       div.scroll {
-        /* width: 600px; */
-        height: 100vh;
         overflow: auto;
         text-align: justify;
-        /* padding: 20px; */
       }
 
       /* Height for devices larger than 576px */
@@ -70,17 +59,22 @@
         color: #fff !important;
       }
 
+      .step-screen-text-container {
+        padding-top: 10vh;
+        height: 80vh;
+      }
+
       /*
         TIMELINE CSS OPTION 1
       */
 
       .timeline {
         margin: 0 auto;
-        padding-top: 40px;
         display: grid;
         grid-template-columns: 1fr 3px 1fr;
         font-family: "Fira Sans", sans-serif;
-        color: #ffffff;
+        color: #000;
+        height: 50vh;
       }
 
       .timeline__component {
@@ -100,7 +94,7 @@
 
       .timeline__middle {
         position: relative;
-        background: #ffffff;
+        background: #000;
       }
 
       .timeline__point {
@@ -110,7 +104,7 @@
         transform: translateX(-50%);
         width: 15px;
         height: 15px;
-        background: #ffffff;
+        background: #000;
         border-radius: 50%;
       }
 
@@ -136,280 +130,172 @@
       .timeline__paragraph {
         line-height: 1.5;
       }
-
-
-      /*
-      Timeline Option 2
-      https://codepen.io/alvarotrigo/pen/BawBzjM
-      */
-
-      /* Timeline Container */
-      /* .timeline {
-        background: #212121;
-        margin: 20px auto;
-      }
-
-      .card {
-        position: relative;
-        background: #212121;
-      }
-
-      .card:nth-child(odd) {
-        padding: 30px 0 30px 30px;
-      }
-      .card:nth-child(even) {
-        padding: 30px 30px 30px 0;
-      }
-      .card::before {
-        content: "";
-        position: absolute;
-        width: 50%;
-        border: solid orangered;
-      }
-
-      .card:nth-child(odd)::before {
-        left: 0px;
-        top: -4.5px;
-        bottom: -4.5px;
-        border-width: 5px 0 5px 5px;
-        border-radius: 50px 0 0 50px;
-      }
-
-      .card:nth-child(even)::before {
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border-width: 5px 5px 5px 0;
-        border-radius: 0 50px 50px 0;
-      }
-
-      .card:first-child::before {
-        border-top: 0;
-        border-top-left-radius: 0;
-      }
-
-      .card:last-child:nth-child(odd)::before {
-        border-bottom: 0;
-        border-bottom-left-radius: 0;
-      }
-
-      .card:last-child:nth-child(even)::before {
-        border-bottom: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      .info {
-        display: flex;
-        flex-direction: column;
-        background: #333;
-        color: gray;
-        border-radius: 10px;
-        padding: 10px;
-      }
-
-      .title {
-        color: orangered;
-        position: relative;
-      }
-
-      .title::before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: white;
-        border-radius: 999px;
-        border: 3px solid orangered;
-      }
-
-      .card:nth-child(even) > .info > .title {
-        text-align: right;
-      }
-
-      .card:nth-child(odd) > .info > .title::before {
-        left: -45px;
-      }
-
-      .card:nth-child(even) > .info > .title::before {
-        right: -45px;
-      } */
-
-
     </style>
 
     <!-- Carousel wrapper -->
     <!-- data-mdb-ride="carousel"  -->
-    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-touch="true" data-mdb-interval="false" >
+    <div id="introCarousel" class="carousel slide shadow-2-strong" data-mdb-touch="true" data-mdb-interval="false" >
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="3"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="4"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="6"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="7"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="8"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="9"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="10"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="11"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="12"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="13"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="14"></li>
+      <ol class="carousel-indicators" style="bottom:10vh">
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black"data-mdb-slide-to="2"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="3"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="4"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="5"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="6"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="7"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="8"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="9"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="10"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="11"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="12"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="13"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="14"></li>
       </ol>
 
       <!-- Inner -->
       <div class="carousel-inner">
         <!-- Single item -->
         <div class="carousel-item active">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white text-center carousel-item-text">
-                <h1 class="mb-3">The Hindu Wedding Guide For</h1>
-                <h1 class="mb-3" style="font-family: cursive;">Rajvi & Yash</h1>
-                <div class="mb-4">Let us take you through all the rituals taking place today</div>
-              </div>
+          <div class="step-screen-text-container d-flex justify-content-center align-items-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1 class="mb-3">The Hindu Wedding Guide For</h1>
+              <h1 class="mb-3" style="font-family: cursive;">Rajvi & Yash</h1>
+              <div class="mb-4">Let us take you through all the rituals taking place today</div>
             </div>
           </div>
         </div>
 
         <!-- Single item -->
         <div class="carousel-item">
-          <div class="mask">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white text-center carousel-item-text">
-                <div class="scroll" style="padding-top: 100px;">
-                  <div role="button" data-mdb-target="#introCarousel" data-mdb-slide-to="0">TODAY's CEREMONY</div>
+          <div class="d-flex justify-content-center">
+            <div class="text-center carousel-item-text" style="padding-left: 8vw; padding-right: 8vw; padding-top: 4vh;">
+              <div class="scroll" style="padding-top: 100px; height: 80vh;">
+                <div class="text-center" role="button" data-mdb-target="#introCarousel" data-mdb-slide-to="0" style="padding-bottom: 10px;">TODAY's CEREMONY</div>
 
-
-                  <!-- OPTION 1 -->
-                  <div class="timeline">
-                    <!-- Row -->
-                    <div class="timeline__component">
-                      <div class="timeline__date timeline__date--right">August 30, 2017</div>
-                    </div>
-                    <div class="timeline__middle">
-                      <div class="timeline__point"></div>
-                    </div>
-                    <div class="timeline__component">
-                    </div>
-
-                    <!-- Row -->
-                    <div class="timeline__component">
-                      </div>
-                      <div class="timeline__middle">
-                        <div class="timeline__point"></div>
-                      </div>
-                      <div class="timeline__component">
-                        <div class="timeline__date timeline__date">August 30, 2017</div>
-                    </div>
-
-                    <!-- Row -->
-                    <div class="timeline__component">
-                      </div>
-                      <div class="timeline__middle">
-                        <div class="timeline__point"></div>
-                      </div>
-                      <div class="timeline__component">
-                        <div class="timeline__date timeline__date">August 30, 2017</div>
-                    </div>
-
-                    <!-- Row -->
-                    <div class="timeline__component">
-                      </div>
-                      <div class="timeline__middle">
-                        <div class="timeline__point"></div>
-                      </div>
-                      <div class="timeline__component">
-                        <div class="timeline__date timeline__date">August 30, 2017</div>
-                    </div>
-
-                    <!-- Row -->
-                    <div class="timeline__component">
-                      </div>
-                      <div class="timeline__middle">
-                        <div class="timeline__point"></div>
-                      </div>
-                      <div class="timeline__component">
-                        <div class="timeline__date timeline__date">August 30, 2017</div>
-                    </div>
-
-                      <!-- Row -->
-                    <div class="timeline__component">
-                      </div>
-                      <div class="timeline__middle">
-                        <div class="timeline__point"></div>
-                      </div>
-                      <div class="timeline__component">
-                        <div class="timeline__date timeline__date">August 30, 2017</div>
-                    </div>
-
-                    <!-- Row -->
-                    <div class="timeline__component">
-                    </div>
-                    <div class="timeline__middle">
-                      <div class="timeline__point"></div>
-                    </div>
-                    <div class="timeline__component">
-                      <div class="timeline__date">February 25, 2019</div>
-                    </div>
-                    <div class="timeline__component">
-                      <div class="timeline__date timeline__date--right">June 3, 2020</div>
-                    </div>
-                    <div class="timeline__middle">
-                      <div class="timeline__point"></div>
-                    </div>
-                    <div class="timeline__component">
-                    </div>
-                    <div class="timeline__component">
-                    </div>
-                    <div class="timeline__middle">
-                      <div class="timeline__point"></div>
-                      <div class="timeline__point timeline__point--bottom"></div>
-                    </div>
-                    <div class="timeline__component timeline__component--bottom">
-                      <div class="timeline__date">June 28, 2021</div>
-                    </div>
+                <div class="timeline">
+                  <!-- Row -->
+                  <div class="timeline__component" style="margin-right: 0px">
+                    <div class="timeline__date timeline__date--right">Baraat Swaagat & Pokhwanu</div>
                   </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                  <div class="timeline__component">
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component">
+                    </div>
+                    <div class="timeline__middle">
+                      <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component">
+                      <div class="timeline__date timeline__date">Jai Mala</div>
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component" style="margin-right: 0px">
+                    <div class="timeline__date timeline__date--right">Ganesh Puja</div>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                  <div class="timeline__component">
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component">
+                    </div>
+                    <div class="timeline__middle">
+                      <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component">
+                      <div class="timeline__date timeline__date">Var Puja</div>
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component" style="margin-right: 0px">
+                    <div class="timeline__date timeline__date--right">Kanya Magman</div>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                    <div class="timeline__component">
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component">
+                    </div>
+                    <div class="timeline__middle">
+                      <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component">
+                      <div class="timeline__date timeline__date">Kandyadaan & Hasta Melap</div>
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component" style="margin-right: 0px">
+                    <div class="timeline__date timeline__date--right">Agni Puja & Mangal Pheras</div>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                    <div class="timeline__component">
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component">
+                    </div>
+                    <div class="timeline__middle">
+                      <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component">
+                      <div class="timeline__date timeline__date">Saptapadi</div>
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component" style="margin-right: 0px">
+                    <div class="timeline__date timeline__date--right">Mangalsutra & Sindoor</div>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                    <div class="timeline__component">
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component">
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                  <div class="timeline__component">
+                    <div class="timeline__date timeline__date">Kansar Bhojan</div>
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component" style="margin-right: 0px">
+                    <div class="timeline__date timeline__date--right">Akhand Saubhagyavati</div>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                    <div class="timeline__component">
+                  </div>
+
+                  <!-- Row -->
+                  <div class="timeline__component">
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                  <div class="timeline__component">
+                    <div class="timeline__date timeline__date">Aashivaad & Vidaai</div>
+                  </div>
+
                 </div>
-
-
-                <!-- <div class="timeline scroll">
-                  <div class="outer">
-                    <div class="card">
-                      <div class="info">
-                        <h3 class="title">Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="info">
-                        <h3 class="title">Title 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="info">
-                        <h3 class="title">Title 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="info">
-                        <h3 class="title">Title 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="info">
-                        <h3 class="title">Title 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-
               </div>
             </div>
           </div>
@@ -418,245 +304,197 @@
         <!-- Single item -->
         <!-- Baraat Swaagat & Pokhwanu -->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center">
-              <!-- <div class="d-flex justify-content-center align-items-center h-100"></div> -->
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Baraat Swaagat & Pokhwanu</h1>
-                <br/>
-                <h5>The Grooms's Entry With A Fun-Filled Procession</h5>
-                <br/>
-                <div>The groom and his family and friend will dance their way to the wedding (Baraat procession), showing off their moves and will be greeted by the bride’s family and friends.</div>
-                </br>
-                <div>The bride’s mother welcomes the group, and asks him if he is prepared to make the commitment of marriage to her daughter. The bride’s mother places kumkum (red vermilion powder), signifying good luck, on the groom’s forehead.</div>
-                </br>
-                <div>The groom is then escorted to the mandap where he awaits the bride’s arrival.</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Baraat Swaagat & Pokhwanu</h1>
+              <br/>
+              <h5>The Grooms's Entry With A Fun-Filled Procession</h5>
+              <br/>
+              <div>The groom and his family and friend will dance their way to the wedding (Baraat procession), showing off their moves and will be greeted by the bride’s family and friends.</div>
+              </br>
+              <div>The bride’s mother welcomes the group, and asks him if he is prepared to make the commitment of marriage to her daughter. The bride’s mother places kumkum (red vermilion powder), signifying good luck, on the groom’s forehead.</div>
+              </br>
+              <div>The groom is then escorted to the mandap where he awaits the bride’s arrival.</div>
             </div>
           </div>
         </div>
 
         <!-- Jai Mala -->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Jai Mala</h1>
-                <br/>
-                <h5>The Exchange Of Garlands</h5>
-                <br/>
-                <div>The couple greet each by exchanging flower garlands, signifying their acceptance of each other as lifelong partners. BFFs forever! Awww...</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Jai Mala</h1>
+              <br/>
+              <h5>The Exchange Of Garlands</h5>
+              <br/>
+              <div>The couple greet each by exchanging flower garlands, signifying their acceptance of each other as lifelong partners. BFFs forever! Awww...</div>
             </div>
           </div>
         </div>
 
         <!-- Ganesh Puja-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Ganesh Puja</h1>
-                </br>
-                <h5>Prayers To Lord Ganesh</h5>
-                </br>
-                <div>The ceremony begins with a prayer honouring Lord Ganesh, the remover of all obstacles. As per Hindu mythology, Lord Ganesh is always worshipped before starting any new chapter in one's life!</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Ganesh Puja</h1>
+              </br>
+              <h5>Prayers To Lord Ganesh</h5>
+              </br>
+              <div>The ceremony begins with a prayer honouring Lord Ganesh, the remover of all obstacles. As per Hindu mythology, Lord Ganesh is always worshipped before starting any new chapter in one's life!</div>
             </div>
           </div>
         </div>
 
         <!-- Var Puja-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Var Puja</h1>
-                <br/>
-                <h5>The Honouring Of The Groom</h5>
-                <br/>
-                <div>The groom is honoured by the bride's parents, who clean his feet with honey and milk. for his new life ahead with their daughter! How fancv! Isn't it?</div>
-                <br/>
-                <div>SHHHHH... The bridesmaids will try to steal the groom's shoes once he is in the mandap His shoes will be held ransom unless the groom digs deep into his pocket to get them back!</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Var Puja</h1>
+              <br/>
+              <h5>The Honouring Of The Groom</h5>
+              <br/>
+              <div>The groom is honoured by the bride's parents, who clean his feet with honey and milk. for his new life ahead with their daughter! How fancv! Isn't it?</div>
+              <br/>
+              <div>SHHHHH... The bridesmaids will try to steal the groom's shoes once he is in the mandap His shoes will be held ransom unless the groom digs deep into his pocket to get them back!</div>
             </div>
           </div>
         </div>
 
         <!-- Kanya Magman-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Kanya Magman</h1>
-                <br/>
-                <h5>The Bride's Entry</h5>
-                <br/>
-                <div>The bride is accompanied by her uncles / brothers as she enters the wedding, who will be holding a "phoolon ki chadar". As the bride enters the mandap, they are separated by an Antarpat (cloth) which signifies that they come as separate individuals.</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Kanya Magman</h1>
+              <br/>
+              <h5>The Bride's Entry</h5>
+              <br/>
+              <div>The bride is accompanied by her uncles / brothers as she enters the wedding, who will be holding a "phoolon ki chadar". As the bride enters the mandap, they are separated by an Antarpat (cloth) which signifies that they come as separate individuals.</div>
             </div>
           </div>
         </div>
 
          <!-- Kandyadaan & Hasta Melap-->
          <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Kandyadaan & Hasta Melap</h1>
-                <br/>
-                <h5>Giving Away Of The Bride & The "Meeting Of Hands"</h5>
-                <br/>
-                <div>The brides parents, with the blessings of the Almighty, will place the bride's right hand in the groom's right hand thereby entrusting her happiness to him from now on. The groom's scarf is then tied to the
-                  bride's veil signifying the union of their souls. Happy Wife = Happy Life!</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Kandyadaan & Hasta Melap</h1>
+              <br/>
+              <h5>Giving Away Of The Bride & The "Meeting Of Hands"</h5>
+              <br/>
+              <div>The brides parents, with the blessings of the Almighty, will place the bride's right hand in the groom's right hand thereby entrusting her happiness to him from now on. The groom's scarf is then tied to the
+                bride's veil signifying the union of their souls. Happy Wife = Happy Life!</div>
             </div>
           </div>
         </div>
 
         <!-- Agni Puja & Mangal Pheras-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Agni Puja & Mangal Pheras</h1>
-                <br/>
-                <h5>Four Circle Around The Holy Fire</h5>
-                <br/>
-                <div>The couple walk around the fire four times, symbolising the core aspirations of married life - Dharma (Duty & Religion), Artha (Prosperity), Kama (Family) and Moksha (Salvation).</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Agni Puja & Mangal Pheras</h1>
+              <br/>
+              <h5>Four Circle Around The Holy Fire</h5>
+              <br/>
+              <div>The couple walk around the fire four times, symbolising the core aspirations of married life - Dharma (Duty & Religion), Artha (Prosperity), Kama (Family) and Moksha (Salvation).</div>
             </div>
           </div>
         </div>
 
         <!-- Saptapadi-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Saptapadi</h1>
-                <br/>
-                <h5>The Seven Vows Of Martial Bliss</h5>
-                <br/>
-                <div>The couple will take seven sacred steps & recite the following vows to one another:</div>
-                <div>1) To keep a pure household, avoiding all things harmful to our health.</div>
-                <div>2) To develop mental, physical & spiritual strength.</div>
-                <div>3) To acquire wealth by righteous means.</div>
-                <div>4) To acquire knowledge, happiness and harmony by mutual love and trust.</div>
-                <div>5) To pray for virtuous, intelligent and courageous children.</div>
-                <div>6) To exercise self-restraint for longevity.</div>
-                <div>7) To vow to always remain true companions and life-long partners.</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Saptapadi</h1>
+              <br/>
+              <h5>The Seven Vows Of Martial Bliss</h5>
+              <br/>
+              <div>The couple will take seven sacred steps & recite the following vows to one another:</div>
+              <div>1) To keep a pure household, avoiding all things harmful to our health.</div>
+              <div>2) To develop mental, physical & spiritual strength.</div>
+              <div>3) To acquire wealth by righteous means.</div>
+              <div>4) To acquire knowledge, happiness and harmony by mutual love and trust.</div>
+              <div>5) To pray for virtuous, intelligent and courageous children.</div>
+              <div>6) To exercise self-restraint for longevity.</div>
+              <div>7) To vow to always remain true companions and life-long partners.</div>
             </div>
           </div>
         </div>
 
         <!-- Mangalsutra & Sindoor-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Mangalsutra & Sindoor</h1>
-                <br/>
-                <h5>Necklace & Powder of Promise</h5>
-                <br/>
-                <div>The mangalsutra necklace & sindoor (red powder on the bride's forehead) symbolises the bride's lifelong protection by the groom & his promise to fulfill her every wish.</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Mangalsutra & Sindoor</h1>
+              <br/>
+              <h5>Necklace & Powder of Promise</h5>
+              <br/>
+              <div>The mangalsutra necklace & sindoor (red powder on the bride's forehead) symbolises the bride's lifelong protection by the groom & his promise to fulfill her every wish.</div>
             </div>
           </div>
         </div>
 
         <!-- Kansar Bhojan-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Kansar Bhojan</h1>
-                <br/>
-                <h5>The Couple's First Meal Together</h5>
-                <br/>
-                <div>The couple feed cach other sweets, symbolising that they will share everything they have in life.</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Kansar Bhojan</h1>
+              <br/>
+              <h5>The Couple's First Meal Together</h5>
+              <br/>
+              <div>The couple feed cach other sweets, symbolising that they will share everything they have in life.</div>
             </div>
           </div>
         </div>
 
         <!-- Akhand Saubhagyavati-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Akhand Saubhagyavati</h1>
-                <br/>
-                <h5>Blessings From Married Women</h5>
-                <br/>
-                <div>Married women whisper "Akhand Saubhagyavati" in the bride's ear, which means "good luck, prosperity and a long happy life".</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Akhand Saubhagyavati</h1>
+              <br/>
+              <h5>Blessings From Married Women</h5>
+              <br/>
+              <div>Married women whisper "Akhand Saubhagyavati" in the bride's ear, which means "good luck, prosperity and a long happy life".</div>
             </div>
           </div>
         </div>
 
         <!--Aashivaad & Vidaai-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>Aashivaad & Vidaai</h1>
-                <br/>
-                <h5>Blessings To The Couple & An Emotional Farewell</h5>
-                <br/>
-                <div>The priest now declares the couple "man & wife". The happy couple seck blessings from God, the priest, their parents & all of you!
-                The bride & her family are teary eyed during this emotional goodbye!</div>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>Aashivaad & Vidaai</h1>
+              <br/>
+              <h5>Blessings To The Couple & An Emotional Farewell</h5>
+              <br/>
+              <div>The priest now declares the couple "man & wife". The happy couple seck blessings from God, the priest, their parents & all of you!
+              The bride & her family are teary eyed during this emotional goodbye!</div>
             </div>
           </div>
         </div>
 
         <!--Conclusion-->
         <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="scroll text-white text-center carousel-item-text">
-                <h1>We are married!!!</h1>
-                </br>
-                <h4>Thank You</h4>
-                </br>
-                <h5>We would like to thank you for your love, support & blessings as the couple starts this new journey!</h5>
-              </div>
+          <div class="scroll step-screen-text-container d-flex justify-content-center">
+            <div class="text-black text-center carousel-item-text">
+              <h1>We are married!!!</h1>
+              </br>
+              <h4>Thank You</h4>
+              </br>
+              <h5>We would like to thank you for your love, support & blessings as the couple starts this new journey!</h5>
             </div>
           </div>
         </div>
-
-        <!-- Single item -->
-        <!-- <div class="carousel-item">
-          <div class="mask" style="
-                background: linear-gradient(
-                  45deg,
-                  rgba(29, 236, 197, 0.7),
-                  rgba(91, 14, 214, 0.7) 100%
-                );
-              ">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white text-center">
-                <h2>And cover it with any mask</h2>
-                <a class="btn btn-outline-light btn-lg m-2"
-                  href="https://mdbootstrap.com/docs/standard/content-styles/masks/" target="_blank" role="button">Learn
-                  about masks</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
 
       </div>
       <!-- Inner -->
 
       <!-- Controls -->
-      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+      <a class="carousel-control-prev text-black" href="#introCarousel" role="button" data-mdb-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+      <a class="carousel-control-next text-black" href="#introCarousel" role="button" data-mdb-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
