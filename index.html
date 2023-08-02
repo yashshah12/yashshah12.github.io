@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
+
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
@@ -29,6 +31,7 @@
       .carousel-item,
       .carousel-item.active {
         height: 100vh;
+        font-family: "Marcellus", sans-serif;
       }
 
       @media only screen and (max-width: 600px)  {
@@ -38,10 +41,24 @@
         }
       }
 
-      .carousel-item-text:nth-child(n) {
+      .carousel-item-text:nth-child(-n+2) {
         padding: 20vw;
+        /* padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vw; */
         overflow: auto;
+        /* height: 70vh; */
       }
+
+
+      .carousel-item-step-text {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vw;
+        overflow: auto;
+        /* height: 70vh; */
+      }
+
 
       div.scroll {
         overflow: auto;
@@ -61,7 +78,11 @@
 
       .step-screen-text-container {
         padding-top: 10vh;
-        height: 80vh;
+        height: 85vh;
+      }
+
+      .text-marcellus {
+        font-family: "Marcellus", sans-serif;
       }
 
       /*
@@ -72,13 +93,16 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 3px 1fr;
-        font-family: "Fira Sans", sans-serif;
-        color: #000;
+        /* font-family: "Fira Sans", sans-serif; */
+        font-family: "Marcellus", sans-serif;
+        color: #8DA88D;
         height: 50vh;
+        text-transform: uppercase;
       }
 
       .timeline__component {
         margin: 0 20px 20px 20px;
+        color: #8DA88D;
       }
 
       .timeline__component--bg {
@@ -94,7 +118,7 @@
 
       .timeline__middle {
         position: relative;
-        background: #000;
+        background: #8DA88D;
       }
 
       .timeline__point {
@@ -104,7 +128,7 @@
         transform: translateX(-50%);
         width: 15px;
         height: 15px;
-        background: #000;
+        background: #8DA88D;
         border-radius: 50%;
       }
 
@@ -114,11 +138,11 @@
       }
 
       .timeline__date--right {
-        text-align: right;
+        /* text-align: right; */
       }
 
       .timeline__date--right {
-        text-align: left;
+        /* text-align: left; */
       }
 
       .timeline__title {
@@ -137,21 +161,21 @@
     <div id="introCarousel" class="carousel slide shadow-2-strong" data-mdb-touch="true" data-mdb-interval="false" >
       <!-- Indicators -->
       <ol class="carousel-indicators" style="bottom:10vh">
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="0" class="active"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="1"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black"data-mdb-slide-to="2"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="3"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="4"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="5"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="6"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="7"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="8"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="9"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="10"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="11"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="12"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="13"></li>
-        <li data-mdb-target="#introCarousel" style="background-color: black" data-mdb-slide-to="14"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270"data-mdb-slide-to="2"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="3"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="4"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="5"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="6"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="7"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="8"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="9"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="10"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="11"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="12"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="13"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="14"></li>
       </ol>
 
       <!-- Inner -->
@@ -159,10 +183,12 @@
         <!-- Single item -->
         <div class="carousel-item active">
           <div class="step-screen-text-container d-flex justify-content-center align-items-center">
-            <div class="text-black text-center carousel-item-text">
-              <h1 class="mb-3">The Hindu Wedding Guide For</h1>
-              <h1 class="mb-3" style="font-family: cursive;">Rajvi & Yash</h1>
-              <div class="mb-4">Let us take you through all the rituals taking place today</div>
+            <div class="text-black text-center carousel-item-text" style="text-transform: uppercase;">
+              <div style="color: #8DA88D;">A Hindu Wedding Guide For</div>
+              <div style="text-align: center; padding-top: 10px; padding-bottom: 40px;">
+                <img width="auto" height="225px" src="./img/logo.png">
+              </div>
+              <div style="color: #8DA88D;">September 9, 2023</div>
             </div>
           </div>
         </div>
@@ -170,13 +196,13 @@
         <!-- Single item -->
         <div class="carousel-item">
           <div class="d-flex justify-content-center">
-            <div class="text-center carousel-item-text" style="padding-left: 8vw; padding-right: 8vw; padding-top: 4vh;">
-              <div class="scroll" style="padding-top: 100px; height: 80vh;">
-                <div class="text-center" role="button" data-mdb-target="#introCarousel" data-mdb-slide-to="0" style="padding-bottom: 10px;">TODAY's CEREMONY</div>
+            <div class="text-center carousel-item-text" style="padding-left: 8vw; padding-right: 8vw; padding-top: 4vh; overflow: hidden; ">
+              <div class="scroll" style="padding-top: 100px; height: 80vh; overflow-y: scroll">
+                <div class="text-center" role="button" data-mdb-target="#introCarousel" data-mdb-slide-to="0" style="padding-bottom: 10px; color: #8DA88D; font-family: 'Marcellus', sans-serif;" >TODAY'S CEREMONY</div>
 
                 <div class="timeline">
                   <!-- Row -->
-                  <div class="timeline__component" style="margin-right: 0px">
+                  <div class="timeline__component" style="text-align: right;">
                     <div class="timeline__date timeline__date--right">Baraat Swaagat & Pokhwanu</div>
                   </div>
                   <div class="timeline__middle">
@@ -191,12 +217,12 @@
                     <div class="timeline__middle">
                       <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component" style="text-align: left;">
                       <div class="timeline__date timeline__date">Jai Mala</div>
                   </div>
 
                   <!-- Row -->
-                  <div class="timeline__component" style="margin-right: 0px">
+                  <div class="timeline__component" style="text-align: right;" >
                     <div class="timeline__date timeline__date--right">Ganesh Puja</div>
                   </div>
                   <div class="timeline__middle">
@@ -211,12 +237,12 @@
                     <div class="timeline__middle">
                       <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component" style="text-align: left;">
                       <div class="timeline__date timeline__date">Var Puja</div>
                   </div>
 
                   <!-- Row -->
-                  <div class="timeline__component" style="margin-right: 0px">
+                  <div class="timeline__component" style="text-align: right;">
                     <div class="timeline__date timeline__date--right">Kanya Magman</div>
                   </div>
                   <div class="timeline__middle">
@@ -231,12 +257,12 @@
                     <div class="timeline__middle">
                       <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component" style="text-align: left;">
                       <div class="timeline__date timeline__date">Kandyadaan & Hasta Melap</div>
                   </div>
 
                   <!-- Row -->
-                  <div class="timeline__component" style="margin-right: 0px">
+                  <div class="timeline__component" style="text-align: right;">
                     <div class="timeline__date timeline__date--right">Agni Puja & Mangal Pheras</div>
                   </div>
                   <div class="timeline__middle">
@@ -251,12 +277,12 @@
                     <div class="timeline__middle">
                       <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component" style="text-align: left;">
                       <div class="timeline__date timeline__date">Saptapadi</div>
                   </div>
 
                   <!-- Row -->
-                  <div class="timeline__component" style="margin-right: 0px">
+                  <div class="timeline__component" style="text-align: right;">
                     <div class="timeline__date timeline__date--right">Mangalsutra & Sindoor</div>
                   </div>
                   <div class="timeline__middle">
@@ -271,12 +297,12 @@
                   <div class="timeline__middle">
                     <div class="timeline__point"></div>
                   </div>
-                  <div class="timeline__component">
+                  <div class="timeline__component" style="text-align: left;">
                     <div class="timeline__date timeline__date">Kansar Bhojan</div>
                   </div>
 
                   <!-- Row -->
-                  <div class="timeline__component" style="margin-right: 0px">
+                  <div class="timeline__component" style="text-align: right;">
                     <div class="timeline__date timeline__date--right">Akhand Saubhagyavati</div>
                   </div>
                   <div class="timeline__middle">
@@ -291,7 +317,7 @@
                   <div class="timeline__middle">
                     <div class="timeline__point"></div>
                   </div>
-                  <div class="timeline__component">
+                  <div class="timeline__component" style="text-align: left;">
                     <div class="timeline__date timeline__date">Aashivaad & Vidaai</div>
                   </div>
 
@@ -304,8 +330,8 @@
         <!-- Single item -->
         <!-- Baraat Swaagat & Pokhwanu -->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Baraat Swaagat & Pokhwanu</h1>
               <br/>
               <h5>The Grooms's Entry With A Fun-Filled Procession</h5>
@@ -316,13 +342,16 @@
               </br>
               <div>The groom is then escorted to the mandap where he awaits the bride’s arrival.</div>
             </div>
+            <!-- <div style="text-align: center; padding-top: 10px;">
+              <img width="auto" height="20px" src="./img/chevrondown.png">
+            </div> -->
           </div>
         </div>
 
         <!-- Jai Mala -->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Jai Mala</h1>
               <br/>
               <h5>The Exchange Of Garlands</h5>
@@ -334,8 +363,8 @@
 
         <!-- Ganesh Puja-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Ganesh Puja</h1>
               </br>
               <h5>Prayers To Lord Ganesh</h5>
@@ -347,8 +376,8 @@
 
         <!-- Var Puja-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Var Puja</h1>
               <br/>
               <h5>The Honouring Of The Groom</h5>
@@ -362,8 +391,8 @@
 
         <!-- Kanya Magman-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Kanya Magman</h1>
               <br/>
               <h5>The Bride's Entry</h5>
@@ -375,8 +404,8 @@
 
          <!-- Kandyadaan & Hasta Melap-->
          <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Kandyadaan & Hasta Melap</h1>
               <br/>
               <h5>Giving Away Of The Bride & The "Meeting Of Hands"</h5>
@@ -389,8 +418,8 @@
 
         <!-- Agni Puja & Mangal Pheras-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Agni Puja & Mangal Pheras</h1>
               <br/>
               <h5>Four Circle Around The Holy Fire</h5>
@@ -402,8 +431,8 @@
 
         <!-- Saptapadi-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Saptapadi</h1>
               <br/>
               <h5>The Seven Vows Of Martial Bliss</h5>
@@ -422,8 +451,8 @@
 
         <!-- Mangalsutra & Sindoor-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Mangalsutra & Sindoor</h1>
               <br/>
               <h5>Necklace & Powder of Promise</h5>
@@ -435,8 +464,8 @@
 
         <!-- Kansar Bhojan-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Kansar Bhojan</h1>
               <br/>
               <h5>The Couple's First Meal Together</h5>
@@ -448,8 +477,8 @@
 
         <!-- Akhand Saubhagyavati-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Akhand Saubhagyavati</h1>
               <br/>
               <h5>Blessings From Married Women</h5>
@@ -461,8 +490,8 @@
 
         <!--Aashivaad & Vidaai-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>Aashivaad & Vidaai</h1>
               <br/>
               <h5>Blessings To The Couple & An Emotional Farewell</h5>
@@ -475,8 +504,8 @@
 
         <!--Conclusion-->
         <div class="carousel-item">
-          <div class="scroll step-screen-text-container d-flex justify-content-center">
-            <div class="text-black text-center carousel-item-text">
+          <div class="scroll step-screen-text-container justify-content-center">
+            <div class="text-black text-center carousel-item-step-text">
               <h1>We are married!!!</h1>
               </br>
               <h4>Thank You</h4>
