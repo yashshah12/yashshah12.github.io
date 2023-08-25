@@ -25,12 +25,21 @@
         display: flex;
         justify-content: center;
       }
+
+      html, body { height: 100%; }
+      .footer-element {
+        position: fixed;
+        bottom: 10px;
+      }
       /* Carousel styling */
       #introCarousel,
       .carousel-inner,
       .carousel-item,
       .carousel-item.active {
-        height: 100vh;
+        /* old browsers */
+        /* height: 100vh; */
+        /* new browsers */
+        /* height: 100dvh; */
         font-family: "Marcellus", sans-serif;
       }
 
@@ -59,6 +68,17 @@
         /* height: 70vh; */
       }
 
+      .carousel-item-step-text-photo-list {
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-top: 10vw;
+        overflow: auto;
+        height: 70vh;
+      }
+
+      .photo-bold-text {
+        font-weight: bolder;
+      }
 
       div.scroll {
         overflow: auto;
@@ -154,6 +174,13 @@
       .timeline__paragraph {
         line-height: 1.5;
       }
+
+      /* Chrome Specific */
+      @media screen and (-webkit-min-device-pixel-ratio:0)
+        and (min-resolution:.001dpcm) {
+          selector{ property:value; }
+
+      }
     </style>
 
     <!-- Carousel wrapper -->
@@ -176,6 +203,7 @@
         <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="12"></li>
         <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="13"></li>
         <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="14"></li>
+        <li data-mdb-target="#introCarousel" style="background-color: #709270" data-mdb-slide-to="15"></li>
       </ol>
 
       <!-- Inner -->
@@ -336,11 +364,24 @@
               <br/>
               <h5>The Grooms's Entry With A Fun-Filled Procession</h5>
               <br/>
-              <div>The groom and his family and friend will dance their way to the wedding (Baraat procession), showing off their moves and will be greeted by the bride’s family and friends.</div>
+              <!-- <div>The groom and his family and friend will dance their way to the wedding (Baraat procession), showing off their moves and will be greeted by the bride’s family and friends.</div>
               </br>
               <div>The bride’s mother welcomes the group, and asks him if he is prepared to make the commitment of marriage to her daughter. The bride’s mother places kumkum (red vermilion powder), signifying good luck, on the groom’s forehead.</div>
               </br>
-              <div>The groom is then escorted to the mandap where he awaits the bride’s arrival.</div>
+              <div>The groom is then escorted to the mandap where he awaits the bride’s arrival.</div> -->
+
+              <div>
+                A joyful Baraat procession & heartfelt welcome of the groom by the bride's family.
+
+                Baraat Swaagat & Pokhwanu are a vibrant start to the festivities that capture the essence of love, joy, and togetherness. As the festivities begin, the groom, accompanied by his family and friends, embarks on a lively Baraat procession to the wedding venue. Dancing with joy and enthusiasm, the Yash’s side spreads an atmosphere of excitement and celebration along the way.
+
+                When arriving at the Marion entrance, the Yash’s side is warmly greeted by the Rajvi’s side, who eagerly await their arrival. Rajvi’s mom, Parul, then extends her heartfelt blessings to Yash. With a gracious smile, she welcomes him into their family and asks him if he is ready to embrace the commitment of marriage with her daughter, Rajvi.
+
+                Parul then applies kumkum, a vibrant red vermilion powder, on Yash’s forehead. This loving act symbolizes the giving of good luck and prosperity upon Yash, marking the beginning of a harmonious journey with his new family. This also signifies the acceptance of Yash into Rajvi’s family.
+
+                With the blessings, Yash is escorted to the mandap, where the wedding rituals will take place.
+
+              </div>
             </div>
             <!-- <div style="text-align: center; padding-top: 10px;">
               <img width="auto" height="20px" src="./img/chevrondown.png">
@@ -509,6 +550,37 @@
               <h1 style="text-transform: uppercase;">And We are married!!!</h1>
               </br>
               <div>Thank you for joining us. We would also like to thank you for your love, support & blessings as we start our journey as husband & wife.</div>
+            </div>
+          </div>
+        </div>
+
+         <!--Photo List-->
+         <div class="carousel-item">
+          <div class="step-screen-text-container d-flex justify-content-center align-items-center">
+            <div class="text-black text-center carousel-item-step-text-photo-list">
+              <h1>Photo List</h1>
+              </br>
+              <div class="photo-bold-text">1. Yash Parents</div>
+              <div class="photo-bold-text">2. Rajvi Parents</div>
+              <div class="photo-bold-text">3. Surabhi & Anik Parents</div>
+              <div class="photo-bold-text">4. Anvi & Nish Parents</div>
+              <div class="photo-bold-text">5. Groomsmen + Friends</div>
+              <div class="photo-bold-text">6. Bridesmaid + Friends</div>
+              <div class="photo-bold-text">7. Nilesh Shah Family</div>
+              <div class="photo-bold-text">8. TODO - Rajvi Side</div>
+              <div class="photo-bold-text">9. Asha + Shailesh Family (Canada)</div>
+              <div class="photo-bold-text">10. TODO - Rajvi Side</div>
+              <div class="photo-bold-text">11. Babul + Nipa Family</div>
+              <div class="photo-bold-text">12. TODO - Rajvi Side</div>
+              <div class="photo-bold-text">13. Yash Canadian Family Friend</div>
+              <div class="photo-bold-text">14. TODO - Rajvi Side</div>
+              <div class="photo-bold-text">15. Yash Family Friends:</div>
+              <div style="font-size: 14px;">Hansaben & Navnitlal Shah, Mitesh Shah & Nikki Shah, Mital & Ruchi Shah, Mita Morar, Kamal Morar, Rameshlal Shah & Manjuben Shah</div>
+              <div class="photo-bold-text">16. TODO - </div>
+              <div class="photo-bold-text">17. TODO - </div>
+              <div class="photo-bold-text">18. TODO - </div>
+              <div class="photo-bold-text">19. TODO - </div>
+              <div class="photo-bold-text">20. TODO - </div>
             </div>
           </div>
         </div>
